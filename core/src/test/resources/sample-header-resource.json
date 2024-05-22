@@ -1,0 +1,18 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "fileReference": "/content/dam/we-retail-instore-logo.png",
+  "altText": "sample text",
+  "sling:resourceType": "aem-bootcamp/components/structure/header",
+  "logoLink": "/content/aem-bootcamp/index",
+  "navigations": {
+    "jcr:primaryType": "nt:unstructured",
+    "item0": {
+      "jcr:primaryType": "nt:unstructured",
+      "rootPath": "/content/aem-bootcamp/en/home-page"
+    },
+    "item1": {
+      "jcr:primaryType": "nt:unstructured",
+      "rootPath": "/content/aem-bootcamp/en/home-page1"
+    }
+  }
+}

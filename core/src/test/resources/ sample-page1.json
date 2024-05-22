@@ -1,0 +1,9 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:title": "HomePage",
+    "cq:template": "/apps/aem-bootcamp/templates/homepage",
+    "sling:resourceType": "aem-bootcamp/components/structure/homepage"
+  }
+}

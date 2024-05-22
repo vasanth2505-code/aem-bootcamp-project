@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Header"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                    maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <logo
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Logo"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                    margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <file
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/fileupload"
+                                                    autoStart="{Boolean}true"
+                                                    cq-msm-lockable="/file"
+                                                    fieldLabel="Upload files"
+                                                    mimeTypes="[image/*]"
+                                                    multiple="{Boolean}false"
+                                                    name="./file"
+                                                    sizeLimit="100000000"
+                                                    text="Upload file"
+                                                    uploadUrl="/content/dam"
+                                                    required="{Boolean}true"
+                                                    uploadUrlBuilder=""/>
+                                            <alt-text
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Alt Text"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    required="{Boolean}true"
+                                                    name="./altText"/>
+                                            <logo-link
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldLabel="Logo Link"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    rootPath="/content"
+                                                    required="{Boolean}true"
+                                                    name="./logoLink"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </logo>
+                    <nav-items
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Nav Items"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                    margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <navigations
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                    composite="{Boolean}true"
+                                                    validation="multifield-max-6"
+                                                    fieldLabel="Primary Navigation">
+                                                <field
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                        fieldLabel="Navigation"
+                                                        name="./navigations">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <rootPath
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                fieldLabel="Root Path"
+                                                                jcr:primaryType="nt:unstructured"
+                                                                rootPath="/content"
+                                                                required="{Boolean}true"
+                                                                name="./rootPath"/>
+                                                    </items>
+                                                </field>
+                                            </navigations>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </nav-items>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>
