@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:TabPanel"
+    jcr:title="opengraph">
+    <items jcr:primaryType="cq:Component">
+        <ogDescription
+            jcr:primaryType="cq:Widget"
+            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+            fieldLabel="OG Description"
+            name="./ogDescription"/>
+        <ogImage
+            jcr:primaryType="cq:Widget"
+            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+            fieldLabel="OG Image"
+            name="./ogImage"/>
+        <ogTitle
+            jcr:primaryType="cq:Widget"
+            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+            fieldLabel="OG Title"
+            name="./ogTitle"/>
+        <ogType
+            jcr:primaryType="cq:Widget"
+            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+            fieldLabel="OG Type"
+            name="./ogType"
+            options="['text' : 'Website' \, 'value' : 'website','text' : 'Article' \, 'value' : 'article','text' : 'Blog' \, 'value' : 'blog']"
+            type="select"/>
+        <twitterCard
+            jcr:primaryType="cq:Widget"
+            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+            fieldLabel="Twitter Card"
+            name="./twitterCard"
+            options="['text' : 'Summary' \, 'value' : 'summary','text' : 'Blog' \, 'value' : 'blog','text' : 'Help' \, 'value' : 'help']"
+            type="select"/>
+    </items>
+</jcr:root>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2024-05-28T13:36:05.466+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/aem-bootcamp/settings/wcm/templates/home-page-template"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Test Page 3"
+        sling:resourceType="aem-bootcamp/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="aem-bootcamp/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aem-bootcamp/components/container"
+                layout="responsiveGrid">
+                <subscribe
+                    jcr:created="{Date}2024-05-28T12:44:51.016+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2024-05-28T13:36:05.464+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aem-bootcamp/components/structure/subscribe"
+                    eMail="vas@001gmail.com"
+                    first="vasanth"
+                    last="T"
+                    type="Fourth Article"/>
+                <contentfragment
+                    jcr:created="{Date}2024-05-27T15:47:03.801+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2024-05-27T15:47:20.828+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aem-bootcamp/components/contentfragment"
+                    displayMode="multi"
+                    fragmentPath="/content/dam/aem-bootcamp/content-fragment-bootcamp/en/author-detail-cf"
+                    paragraphScope="all"
+                    text="author-detail-cf Aem Bootcamp content fragment CF Author Name Vasanth Display picture /apps/aem-bootcamp Author Bio An author bio is a short and sweet biography that lists your professional accomplishments. It is a multipurpose peice of text that might be used in query letters to agents or publishers or run alongside your name when you have short fiction or poems published. Email vasanth001@gmail.com Website /apps/aem-bootcamp-packages"
+                    variationName="master"/>
+                <aembootcampsitepagec
+                    jcr:created="{Date}2024-05-28T09:56:51.011+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2024-05-28T09:56:51.011+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aem-bootcamp/components/aembootcampsitepagecomponent"/>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

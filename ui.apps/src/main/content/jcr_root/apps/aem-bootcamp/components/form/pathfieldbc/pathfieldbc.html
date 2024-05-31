@@ -1,0 +1,31 @@
+<div class="coral-Form-fieldwrapper">
+    <label class="coral-Form-fieldlabel" for="${id}-input">${fieldLabel}</label>
+    <input is="coral-textfield" class="coral-Textfield" id="${id}-input" name="${name}" value="${value}" />
+    <button is="coral-button" class="coral-Button coral-Button--secondary" icon="select" iconPosition="before">
+        <coral-icon icon="select"></coral-icon>
+        Select Path
+    </button>
+</div>
+ 
+<script>
+    (function(document, $, Coral) {
+        "use strict";
+ 
+        $(document).on("foundation-contentloaded", function(e) {
+            // Initialize the Pathfield with a CoralUI path browser dialog
+            Coral.commons.ready($(e.target).find("[is='coral-pathfield']"), function($pathfield) {
+                $pathfield.on("click", function() {
+                    // Open the path browser dialog
+                    var pathbrowser = new Coral.PathBrowser().set({
+                        rootPath: "/content/dam"
+                    });
+pathbrowser.show().then(function() {
+                        if (pathbrowser.value) {
+                            $pathfield.find("input").val(pathbrowser.value);
+                        }
+                    });
+                });
+            });
+        });
+    })(document, Granite.$, Coral);
+</script>
